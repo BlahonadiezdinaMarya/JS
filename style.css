@@ -1,0 +1,38 @@
+button {
+    cursor: pointer;
+    display:block;
+    padding: 0.5em;
+    margin: 1em 0;
+    border-radius: 5%;
+  }
+
+p, input, select {
+    box-sizing: border-box;
+    border: 1px solid gray; 
+    margin: 1em 0; 
+    padding: 1em; 
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+  }
+
+#artist-info,
+#paintings-info {
+    margin-top: 20px;
+}
+
+.div {
+    width: 10%;
+    padding: 1em;
+    margin: 1em 0;
+}
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}

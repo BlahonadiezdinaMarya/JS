@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Завдання на JS</title>
+</head>
+<body>
+    <div>
+        <h3>1. Очищення рядка від усіх не буквено-цифрових символів.</h3>
+        <label for="input1">Введіть текст:</label>
+        <input type="text" id="input1">
+        <button onclick="cleanText()">Очистити</button>
+        <p id="output1"></p>
+    </div>
+    <div>
+        <h3>2. Доповнення нулями до зазначеної довжини введене числове значення.</h3>
+        <label for="numInput2">Введіть число:</label>
+        <input type="number" id="numInput2">
+        <label for="lenInput2">Введіть бажану довжину:</label>
+        <input type="number" id="lenInput2">
+        <button onclick="addZeros()">Додати 0</button>
+        <p id="output2"></p>
+    </div>
+    <div>
+        <h3>3. Переведення введеного рядка у верблюжий регістр</h3>
+        <label for="input3">Введіть текст:</label>
+        <input type="text" id="input3">
+        <button onclick="convertToCamelCase()">Перевести</button>
+        <p id="output3"></p>
+    </div>
+    <div> 
+        <h3>4. Масив, елементи якого є числами фібоначчі.</h3>
+        <label for="numInput4">Введіть розмір масиву (к-ть елементів):</label>
+        <input type="number" id="numInput4">
+        <button onclick="generateFibonacciArray()">Згенерувати</button>
+        <p id="output4"></p>
+    </div>
+    <div>
+        <h3>5. Відфільтрування масиву, шляхом видалення всіх від'ємних та нульових елементів.</h3>
+        <label for="arrayInput5">Створення масиву:</label>
+        <input type="text" id="arrayInput5">
+        <button onclick="filterArray()">Відфільтрувати</button>
+        <p id="output5"></p>
+    </div>
+    <div>
+        <h3>6. Інформація про художника та його роботи</h3>
+        <label for="artist-name">Ім'я:</label>
+        <input class="input" type="text" id="artist-name">
+          
+        <label for="artist-surname">Прізвище:</label>
+        <input class="input" type="text" id="artist-surname">
+          
+        <label for="artist-contact">Контактні дані:</label>
+        <input class="input" type="text" id="artist-contact">
+          
+        <button onclick="createArtist()">Створити художника</button>
+          
+        <label for="painting-title">Назва картини:</label>
+        <input class="input" type="text" id="painting-title">
+          
+        <label for="painting-year">Рік виконання:</label>
+        <input class="input" type="number" id="painting-year">
+          
+        <label for="painting-technique">Техніка виконання:</label>
+        <select id="painting-technique">
+            <option value="Акрил">Акрил</option>
+            <option value="Олія">Олія</option>
+            <option value="Акварель">Акварель</option>
+            <option value="Графіка">Графіка</option>
+            <option value="Інше">Інше</option>
+        </select>
+          
+        <label for="painting-dimensions">Розміри:</label>
+        <input class="input" type="text" id="painting-dimensions">
+          
+        <label for="artist-list">Оберіть художника:</label>
+        <select id="artist-list"></select>
+          
+        <button onclick="addPainting()">Додати картину</button>
+          
+        <label for="selected-artist-list">Оберіть художника для перегляду:</label>
+        <select id="selected-artist-list"></select>
+          
+        <button onclick="displayArtistInfo()">Показати інформацію про художника</button>
+          
+        <div id="artist-info"></div>
+        <div id="paintings-info"></div>
+    </div>
+    <div>
+        <h3>7. Підрахунок к-ті натискань на кнопку</h3>
+        <button onclick="countClicks(); addP()">Натиснути</button>
+        <p >К-ть натискань: <span id="clickCount">0</span></p>
+    </div>
+    <div>
+        <h3>8. При натисканні на кнопку створюються абзаци з порядковим номером</h3>
+        <div id="addP"></div>
+    </div>
+    <div>
+        <h3>9. По першому натисканні на кожен дів він пофарбується синім фоном, по другому фарбується у зелений і так далі</h3>
+        <div id="div1" class="div">DIV 1</div>
+        <div id="div2" class="div">DIV 2</div>
+    </div>
+    <div>
+        <h3>10. По першому натисканні на кожен дів він пофарбується синім фоном, по другому фарбується у зелений і так далі</h3>
+        <p >Результат можна переглянути у консолі </p>
+    </div>
+    <script src="index2.js"></script>
+</body>
+</html>
